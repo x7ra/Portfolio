@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet Script Batch - Stage BTS SIO SISR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">   
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1><a href="index.html">VÉCHAMBRE Loïc</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="index.html#skills">Compétences</a></li>
+                    <li><a href="index.html#projects">Projets</a></li>
+                    <li><a href="index.html#experience">Expériences</a></li>
+                    <li><a href="index.html#education">Formation</a></li>
+                    <li><a href="index.html#veille">Veille</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Projet Detail -->
+    <section class="project-detail">
+        <div class="container">
+            <h2 class="section-title">Script Batch de Gestion Réseau - Projet de Stage</h2>
+
+            <div class="project-description">
+                <h3>Description du projet</h3>
+                <p>Durant mon stage, j'ai développé un script batch complet pour automatiser la configuration des partages réseau et l'installation des imprimantes dans un environnement Windows. Ce projet répondait à un besoin concret de l'entreprise pour simplifier les déploiements et réduire les erreurs de configuration.</p>
+
+                <h3>Objectifs principaux</h3>
+                <ul>
+                    <li>Automatiser la configuration des partages réseau avec gestion des identifiants</li>
+                    <li>Simplifier l'installation des imprimantes réseau avec les bons pilotes</li>
+                    <li>Créer une interface utilisateur intuitive en ligne de commande</li>
+                    <li>Gérer les erreurs et fournir un retour clair à l'utilisateur</li>
+                </ul>
+
+                <h3>Fonctionnalités clés</h3>
+                <ul>
+                    <li>Menu interactif avec validation des saisies</li>
+                    <li>Gestion de 30 partages réseau différents avec identifiants sécurisés</li>
+                    <li>Installation de 24 imprimantes avec leurs pilotes spécifiques</li>
+                    <li>Création automatique de raccourcis sur le bureau</li>
+                    <li>Vérification de la connectivité réseau avant configuration</li>
+                </ul>
+
+                <h3>Technologies utilisées</h3>
+                <div class="tech-badges">
+                    <span class="badge">Batch Script</span>
+                    <span class="badge">Windows CMD</span>
+                    <span class="badge">PowerShell</span>
+                    <span class="badge">Réseau TCP/IP</span>
+                </div>
+
+                <h3>Résultats obtenus</h3>
+                <p>Le script a permis de réduire le temps de configuration d'un poste de travail de 30 minutes à moins de 2 minutes, tout en éliminant les erreurs humaines. Il a été déployé sur l'ensemble du parc informatique et intégré dans les procédures d'onboarding.</p>
+
+                <h3>Extraits du code</h3>
+                <pre><code class="language-batch">:: Installation des imprimantes
+echo Ajout de l'imprimante...
+rundll32 printui.dll,PrintUIEntry /if /b "%varName%" /f "%SystemRoot%\inf\ntprint.inf" /r "%varPort%" /m "%varDriver%"
+
+:: Configuration des partages réseau
+cmdkey /add:"%cible%" /user:"%utilisateur%" /pass:"%motdepasse%"
+powershell -Command "$ws=New-Object -ComObject WScript.Shell; $sc=$ws.CreateShortcut('%cheminRaccourci%')"</code></pre>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Loïc VÉCHAMBRE - Étudiant BTS SIO SISR à l'IPSSI</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
