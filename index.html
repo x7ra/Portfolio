@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="container">
-            <h1><a href="index.html">VÉCHAMBRE Loïc</a></h1>
+            <h1><a href="index.html">Loïc VÉCHAMBRE</a></h1>
             <nav>
                 <ul>
                     <li><a href="#about">À propos</a></li>
@@ -18,6 +18,7 @@
                     <li><a href="#projects">Projets</a></li>
                     <li><a href="#experience">Expériences</a></li>
                     <li><a href="#education">Formation</a></li>
+                    <li><a href="E6.html">E6</a></li>
                     <li><a href="index.html#veille">Veille</a></li>
                 </ul>
             </nav>
@@ -27,8 +28,8 @@
     <section id="hero" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2>Bienvenue sur mon portfolio</h2>
-                <p>Spécialiste en infrastructure, systèmes et réseaux</p>
+                <h2>Loïc VÉCHAMBRE</h2>
+                <p>Apprenti à la Direction Générale des Douanes | Aspirant Ingénieur en Cybersécurité</p>
             </div>
         </div>
     </section>
@@ -61,7 +62,7 @@
                             <span>+33 06 26 15 09 02</span>
                         </div>
                     </div>
-                    <a href="img/CV_Véchambre_Loïc.pdf" class="btn" download>Télécharger mon CV</a>
+                    <a href="img/CV_Vechambre_Loic.pdf" class="btn" download>Télécharger mon CV</a>
                 </div>
             </div>
         </div>
@@ -73,22 +74,31 @@
             <h2 class="section-title">Mes compétences</h2>
 
             <!-- Badges de compétences -->
-            <div class="skills-container">
+            <div class="skill-category">
+                <h3>Sécurité Informatique</h3>
+                <div class="skill-badges">
+                    <span>Pare-feu Fortinet</span>
+                    <span>VPN WireGuard</span>
+                    <span>Vaultwarden (Gestionnaire de mots de passe)</span>
+                    <span>Durcissement (Hardening) système</span>
+                    <span>ACL Cisco</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Infrastructure & Systèmes</h3>
                 <div class="skill-badges">
                     <span>Configuration Cisco & Routage</span>
                     <span>Windows Server & Active Directory</span>
                     <span>Linux (Debian, Ubuntu)</span>
-                    <span>VPN (WireGuard)</span>
                     <span>TrueNAS & Services Auto-hébergés</span>
                     <span>Docker</span>
                     <span>PowerShell & Bash</span>
-                    <span>Sécurisation des Infrastructures</span>
                     <span>Gestion de Projet IT</span>
                 </div>
             </div>
 
             <!-- Bouton Télécharger Fiche E6 -->
-            <div class="download-section" style="text-align: center; margin-top: 40px;">
+            <div class="download-section">
                 <a href="docs/fiche_synthese_E6.pdf" class="btn" download="docs/fiche_synthese_E6.pdf" >
                     <i class="fas fa-download"></i> Télécharger ma fiche de synthèse E6
                 </a>
@@ -159,7 +169,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Serveur TrueNAS avec services intégrés</h3>
-                        <p>Mise en place d'un serveur TrueNAS incluant un VPN WireGuard, un Nextcloud pour le stockage collaboratif et un Vaultwarden pour la gestion sécurisée des mots de passe.</p>
+                        <p>Mise en place d'un coffre-fort numérique (Vaultwarden) et d'un tunnel sécurisé (WireGuard) pour l'accès distant, couplés à un Nextcloud pour le stockage collaboratif sur serveur TrueNAS.</p>
                         <div class="project-tags">
                             <span>TrueNAS</span>
                             <span>WireGuard VPN</span>
@@ -176,7 +186,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Configuration Switch & Firewall – Projet Scanner de Colis</h3>
-                        <p>Mise en place et configuration de switchs et d'un firewall Fortinet pour sécuriser et connecter un système de scan automatisé de colis.</p>
+                        <p>Segmentation réseau par VLAN et filtrage de flux via firewall FortiGate pour isoler les flux critiques du scanner de colis.</p>
                         <div class="project-tags">
                             <span>Fortinet FortiGate</span>
                             <span>Configuration Switch</span>
@@ -201,14 +211,12 @@
                     <div class="timeline-content">
                         <h3>Assistant Chef de Projet - Alternance</h3>
                         <h4>Direction Générale des Douanes et Droits Indirects (DGDDI)</h4>
-                        <p>
-                            <ul>
-                                <li>Gestion et suivi de projets IT au sein de la DGDDI</li>
-                                <li>Configuration et préparation de switchs pour les différents sites</li>
-                                <li>Commande et gestion du matériel informatique pour l'ensemble des services</li>
-                                <li>Support et gestion des tickets utilisateurs (diagnostic, traitement, suivi)</li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>Gestion et maintien en condition de sécurité (MCO) des infrastructures réseau de la DGDDI</li>
+                            <li>Configuration sécurisée de switchs et équipements périmétriques</li>
+                            <li>Gestion des accès et application des politiques de sécurité (Habilitations, VPN)</li>
+                            <li>Support technique de niveau 2 sur les incidents réseau et sécurité</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -218,14 +226,12 @@
                     <div class="timeline-content">
                         <h3>Stage - Technicien systèmes et réseaux</h3>
                         <h4>Cellule TSI des Douanes Françaises - Direction Régionale de Paris Est</h4>
-                        <p>
-                            <ul>
-                                <li>Administration et maintenance de l'infrastructure réseau</li>
-                                <li>Installation de nouveaux équipements réseau</li>
-                                <li>Création de script pour le paramétrage d'équipements</li>
-                                <li>Support technique aux utilisateurs</li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>Administration et maintenance de l'infrastructure réseau</li>
+                            <li>Installation de nouveaux équipements réseau</li>
+                            <li>Création de script pour le paramétrage d'équipements</li>
+                            <li>Support technique aux utilisateurs</li>
+                        </ul>
                     </div>
                 </div>
                 
@@ -235,14 +241,12 @@
                     <div class="timeline-content">
                         <h3>Projet - Infrastructure réseau</h3>
                         <h4>BTS SIO</h4>
-                        <p>
-                            <ul>
-                                <li>Conception d'une maquette réseau pour une entreprise fictive</li>
-                                <li>Configuration de routeurs et switches Cisco</li>
-                                <li>Mise en place de services réseau (DHCP, DNS, etc.)</li>
-                                <li>Documentation technique complète</li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>Conception d'une maquette réseau pour une entreprise fictive</li>
+                            <li>Configuration de routeurs et switches Cisco</li>
+                            <li>Mise en place de services réseau (DHCP, DNS, etc.)</li>
+                            <li>Documentation technique complète</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -298,40 +302,191 @@
 <section id="veille" class="veille">
     <div class="container">
         <h2 class="section-title">Veille Informatique</h2>
-        <div class="veille-content">
 
-            <!-- Explication de la veille -->
-            <p>La veille informatique consiste à surveiller quotidiennement les évolutions du domaine technologique, notamment les vulnérabilités découvertes, les nouvelles menaces, les mises à jour de sécurité, ou encore les tendances futures. Elle est essentielle pour tout professionnel travaillant dans le secteur des systèmes d'information.</p>
+        <!-- Intro -->
+        <p class="veille-intro">La veille informatique consiste à surveiller en continu les évolutions du domaine technologique : vulnérabilités, nouvelles menaces, mises à jour de sécurité et tendances. Elle est indispensable pour tout professionnel des systèmes d’information.</p>
 
-            <p>Elle permet de :</p>
-            <ul class="veille-list">
-                <li>Détecter rapidement les failles de sécurité critiques</li>
-                <li>Suivre les attaques récentes et comprendre leurs techniques</li>
-                <li>Rester informé des réglementations (RGPD, ANSSI, NIST…)</li>
-                <li>Mettre à jour ses compétences avec les outils et protocoles nouveaux</li>
-            </ul>
-
-            <!-- Ce que je fais -->
-            <h3>Ma démarche de veille</h3>
-            <p>Durant mon stage à la Douane Française, j’ai renforcé ma vigilance concernant les vulnérabilités réseau, les incidents récents et les bonnes pratiques de sécurité.</p>
-            <p>Je suis particulièrement attentif aux alertes publiées par les organismes gouvernementaux comme le <strong>CISA</strong> ou <strong>CERT-FR</strong>, car elles sont souvent utilisées comme références dans les audits de sécurité.</p>
-
-            <!-- Sources -->
-            <h3>Sources suivies</h3>
-            <ul class="veille-sources">
-                <li><strong>KrebsOnSecurity</strong> : Actualités sur les cyberattaques, ransomwares et vulnérabilités exploitées (<a href="https://krebsonsecurity.com"  target="_blank">krebsonsecurity.com</a>)</li>
-                <li><strong>CISA.gov</strong> : Alertes officielles sur les vulnérabilités exploitables (<a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog"  target="_blank">cisa.gov/alerts</a>)</li>
-                <li><strong>CERT-FR</strong> : Centre gouvernemental français de veille sur les risques informatiques (<a href="https://www.cert.ssi.gouv.fr"  target="_blank">cert.ssi.gouv.fr</a>)</li>
-                <li><strong>LinkedIn / Twitter</strong> : Suivi actif de comptes spécialisés en cybersécurité</li>
-            </ul>
-
-            <!-- Mon objectif -->
-            <h3>Mon objectif</h3>
-            <p>J’oriente ma veille vers le domaine de la <strong>cybersécurité</strong>. Je souhaite poursuivre une carrière dans l’analyse de vulnérabilités, la réponse aux incidents ou la gestion des risques numériques.</p>
-            <p>Une veille régulière me permettra de rester au fait des dernières méthodes d’attaque et des outils de défense les plus efficaces.</p>
-
-            
+        <!-- Thèmes surveillés -->
+        <h3 class="veille-subtitle">Thèmes surveillés</h3>
+        <div class="veille-themes">
+            <div class="veille-theme-card">
+                <i class="fas fa-bug"></i>
+                <h4>Vulnérabilités</h4>
+                <p>Suivi des CVE critiques, exploits actifs et correctifs prioritaires</p>
+            </div>
+            <div class="veille-theme-card">
+                <i class="fas fa-skull-crossbones"></i>
+                <h4>Ransomware & Malwares</h4>
+                <p>Analyse des groupes APT, nouvelles variantes et techniques d’attaque</p>
+            </div>
+            <div class="veille-theme-card">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Réglementations</h4>
+                <p>Actualités RGPD, directives ANSSI, référentiels NIS2 et NIST</p>
+            </div>
+            <div class="veille-theme-card">
+                <i class="fas fa-network-wired"></i>
+                <h4>Sécurité Réseau</h4>
+                <p>Firewall, VPN, segmentation, zero trust et nouvelles architectures</p>
+            </div>
         </div>
+
+        <!-- Sources -->
+        <h3 class="veille-subtitle">Sources suivies</h3>
+        <div class="veille-sources-grid">
+            <a href="https://krebsonsecurity.com" target="_blank" class="source-card">
+                <div class="source-icon"><i class="fas fa-newspaper"></i></div>
+                <div class="source-info">
+                    <h4>KrebsOnSecurity</h4>
+                    <p>Cyberattaques, ransomwares et vulnérabilités exploitées en temps réel</p>
+                    <span class="source-tag">Blog indépendant</span>
+                </div>
+            </a>
+            <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" class="source-card">
+                <div class="source-icon"><i class="fas fa-flag-usa"></i></div>
+                <div class="source-info">
+                    <h4>CISA.gov</h4>
+                    <p>Alertes officielles américaines sur les vulnérabilités activement exploitées</p>
+                    <span class="source-tag">Gouvernemental</span>
+                </div>
+            </a>
+            <a href="https://www.cert.ssi.gouv.fr" target="_blank" class="source-card">
+                <div class="source-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="source-info">
+                    <h4>CERT-FR</h4>
+                    <p>Centre gouvernemental français de veille et de réponse aux incidents</p>
+                    <span class="source-tag">Gouvernemental FR</span>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="source-card">
+                <div class="source-icon"><i class="fab fa-linkedin"></i></div>
+                <div class="source-info">
+                    <h4>LinkedIn / X (Twitter)</h4>
+                    <p>Suivi de comptes spécialisés en cybersécurité et experts du secteur</p>
+                    <span class="source-tag">Réseaux sociaux</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Article vedette -->
+        <h3 class="veille-subtitle">À la une</h3>
+        <div class="article-featured">
+            <div class="article-featured-icon">
+                <i class="fas fa-fish"></i>
+            </div>
+            <div class="article-featured-body">
+                <div class="article-header">
+                    <span class="article-source krebs">KrebsOnSecurity</span>
+                    <span class="article-date"><i class="fas fa-calendar-alt"></i> Mars 2025</span>
+                    <span class="article-badge"><i class="fas fa-star"></i> Article du moment</span>
+                </div>
+                <h4>Le phishing : comment les hackers volent vos mots de passe par e-mail</h4>
+                <p class="article-featured-lead">Vous avez sûrement déjà reçu un e-mail de votre "banque" vous demandant de vous connecter d’urgence… C’est exactement ça, le phishing.</p>
+                <div class="article-featured-sections">
+                    <div class="featured-section">
+                        <i class="fas fa-question-circle"></i>
+                        <div>
+                            <strong>C’est quoi exactement ?</strong>
+                            <p>Le phishing (ou hameçonnage) consiste à envoyer un faux e-mail qui imite parfaitement un vrai service (banque, impôts, La Poste…). Le lien dans l’e-mail mène vers un faux site qui copie l’original, et quand vous tapez votre mot de passe… il va directement chez le hacker.</p>
+                        </div>
+                    </div>
+                    <div class="featured-section">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <strong>Pourquoi tout le monde est concerné</strong>
+                            <p>En 2024, le phishing représente plus de 80 % des cyberattaques réussies contre les entreprises. Ce n’est pas une attaque "technique" — elle vise directement les humains, pas les machines. Un seul clic suffit pour compromettre tout un réseau d’entreprise.</p>
+                        </div>
+                    </div>
+                    <div class="featured-section">
+                        <i class="fas fa-lightbulb"></i>
+                        <div>
+                            <strong>Ce que j’ai appris de cette veille</strong>
+                            <p>Les nouvelles campagnes utilisent l’IA pour générer des e-mails sans fautes, personnalisés avec votre prénom et votre entreprise. La vigilance reste la meilleure défense : vérifier l’expéditeur, ne jamais cliquer sans réfléchir, et activer la double authentification (MFA).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-tags">
+                    <span>Phishing</span>
+                    <span>Ingénierie sociale</span>
+                    <span>MFA</span>
+                    <span>Sensibilisation</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 articles récents -->
+        <h3 class="veille-subtitle">Articles récents</h3>
+        <div class="veille-articles">
+
+            <div class="article-card">
+                <div class="article-header">
+                    <span class="article-source cert-fr">CERT-FR</span>
+                    <span class="article-date"><i class="fas fa-calendar-alt"></i> Mars 2025</span>
+                </div>
+                <h4>Campagne d’attaques par force brute visant les accès RDP exposés</h4>
+                <p>Le CERT-FR signale une recrudescence des attaques automatisées ciblant les services Bureau à distance (RDP) exposés sur Internet, avec recommandation de restriction d’accès et d’activation du MFA.</p>
+                <div class="article-tags">
+                    <span>RDP</span>
+                    <span>Brute Force</span>
+                    <span>MFA</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-header">
+                    <span class="article-source cisa">CISA</span>
+                    <span class="article-date"><i class="fas fa-calendar-alt"></i> Février 2025</span>
+                </div>
+                <h4>Vulnérabilités critiques dans FortiOS activement exploitées</h4>
+                <p>La CISA ajoute plusieurs failles FortiOS à son catalogue KEV, dont une permettant l’exécution de code à distance sans authentification. Application des correctifs jugée prioritaire.</p>
+                <div class="article-tags">
+                    <span>Fortinet</span>
+                    <span>CVE</span>
+                    <span>Patch</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-header">
+                    <span class="article-source anssi">ANSSI</span>
+                    <span class="article-date"><i class="fas fa-calendar-alt"></i> Décembre 2024</span>
+                </div>
+                <h4>Guide de durcissement Active Directory – recommandations ANSSI</h4>
+                <p>Mise à jour du guide de sécurisation Active Directory avec nouvelles recommandations sur les tiers d’administration, comptes privilégiés et détection des mouvements latéraux.</p>
+                <div class="article-tags">
+                    <span>Active Directory</span>
+                    <span>Hardening</span>
+                    <span>Privilèges</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bouton News en direct -->
+        <div class="veille-news-btn-wrapper">
+            <button class="btn btn-news" id="toggleNews" onclick="toggleNewsPanel()">
+                <i class="fas fa-rss"></i> News en direct — KrebsOnSecurity
+            </button>
+        </div>
+        <div class="news-panel" id="newsPanel">
+            <div class="news-panel-header">
+                <span><i class="fas fa-circle news-live-dot"></i> Flux en direct — KrebsOnSecurity</span>
+                <button onclick="toggleNewsPanel()" class="news-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="newsContent" class="news-content">
+                <div class="news-loading"><i class="fas fa-spinner fa-spin"></i> Chargement des articles...</div>
+            </div>
+        </div>
+
+        <!-- Objectif -->
+        <div class="veille-objectif">
+            <i class="fas fa-bullseye"></i>
+            <div>
+                <h4>Mon objectif</h4>
+                <p>J’oriente ma veille vers la <strong>cybersécurité offensive et défensive</strong> : analyse de vulnérabilités, réponse aux incidents et gestion des risques numériques. Cette pratique régulière me permet de rester au fait des dernières méthodes d’attaque et des outils de défense les plus efficaces.</p>
+            </div>
+        </div>
+
     </div>
 </section>
 
